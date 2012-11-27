@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="mybudget.database.element.Transaction" table="TRANSACTIONS">
+    <id column="TRANSACTION_ID" name="id">
+      <generator class="native"/>
+    </id>
+    <property length="1024" name="description" type="string"/>
+    <property name="type"/>
+    <property name="value"/>
+    <property column="TRANSACTION_DATE" index="indexDate" name="date" type="timestamp"/>
+    <set name="tags" table="TRANSACTION_TAG">
+      <key>
+        <column index="indexTransaction" name="TRANSACTION_ID"/>
+      </key>
+      <many-to-many class="mybudget.database.element.Tag" column="TAG_ID"/>
+    </set>
+  </class>
+</hibernate-mapping>
