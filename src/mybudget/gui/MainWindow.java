@@ -2692,9 +2692,11 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
             if (null == transaction) 
                 return;
             transaction.setType(Transaction.TYPE_EXPENSE);
-            transactionManager.insert(transaction);
-            for (Long id : dialogTransaction.getTagIdList()) {
-                transactionManager.addTagToTransaction(transaction.getId(), id);
+            long trID = transactionManager.insert(transaction);
+            if (trID > 0L) {
+                for (Long id : dialogTransaction.getTagIdList()) {
+                    transactionManager.addTagToTransaction(transaction.getId(), id);
+                }
             }
             updateGUIAfterUpdateBase(false);
         }

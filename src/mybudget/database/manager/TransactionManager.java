@@ -35,24 +35,32 @@ public class TransactionManager {
         
         return transaction.getId();
     }
-    
+
+    /**
+     * Вставляет новую сущность - транзакции в базу.
+     * @param transaction транзакция
+     * @return возвращает идентификатор вставленой транзакции, или 0 в случае ошибки.
+     */
     public Long insert(Transaction transaction) {
-        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
-        
-        session.beginTransaction();
-        
-        session.save(transaction);
-        session.getTransaction().commit();
-        
-        return transaction.getId();        
+        try {
+            Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+            session.beginTransaction();
+            session.save(transaction);
+            session.getTransaction().commit();
+
+            return transaction.getId();
+        } catch (Exception e) {
+            return 0L;
+        }
     }
     
     public void update(Transaction transaction) {
-        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
-        
-        session.beginTransaction();
-        session.update(transaction);
-        session.getTransaction().commit();
+        try {
+            Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+            session.beginTransaction();
+            session.update(transaction);
+            session.getTransaction().commit();
+        } catch (Exception e) { }
     }
     
     public void insertOrUpdate(Transaction transaction) {
