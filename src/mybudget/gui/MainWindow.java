@@ -3083,15 +3083,16 @@ private void jComboBoxSumPeriodActionPerformed(java.awt.event.ActionEvent evt) {
                             "%tF;%s;%f;%s\n",
                             t.getDate(), desc, value, tags));
                     }
-                } catch (Exception e) {
-                    // TODO : error message.
-                    Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, e);
+                    JOptionPane.showMessageDialog(this, "Export Complete.", "Export", JOptionPane.INFORMATION_MESSAGE);
+                } catch (Exception ex) {
+                    JOptionPane.showMessageDialog(this, ex, "Fatal Error", JOptionPane.ERROR_MESSAGE);
+                    Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
                 } finally {
                     if (writer != null) {
                         try {
                             writer.close();
                         } catch (IOException ex) {
-                            // TODO : error message.
+                            JOptionPane.showMessageDialog(this, ex, "Fatal Error", JOptionPane.ERROR_MESSAGE);
                             Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
                         }
                     }
