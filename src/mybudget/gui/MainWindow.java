@@ -1215,7 +1215,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jDialogTagsList.setIconImage((new javax.swing.ImageIcon(getClass().getResource("/mybudget/gui/images/logo.png"))).getImage());
         jDialogTagsList.setModal(true);
 
-        jButtonTagListNew.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jButtonTagListNew.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButtonTagListNew.setText(i18n.getString("New")); // NOI18N
         jButtonTagListNew.setPreferredSize(new java.awt.Dimension(90, 23));
         jButtonTagListNew.addActionListener(new java.awt.event.ActionListener() {
@@ -1225,7 +1225,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         });
         jPanelTagsListTop.add(jButtonTagListNew);
 
-        jButtonTagListEdit.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jButtonTagListEdit.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButtonTagListEdit.setText(i18n.getString("Edit")); // NOI18N
         jButtonTagListEdit.setMargin(new java.awt.Insets(2, 4, 2, 4));
         jButtonTagListEdit.setPreferredSize(new java.awt.Dimension(90, 23));
@@ -1240,7 +1240,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jSeparator1.setPreferredSize(new java.awt.Dimension(2, 23));
         jPanelTagsListTop.add(jSeparator1);
 
-        jButtonTagListDelete.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jButtonTagListDelete.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButtonTagListDelete.setText(i18n.getString("Delete")); // NOI18N
         jButtonTagListDelete.setPreferredSize(new java.awt.Dimension(90, 23));
         jButtonTagListDelete.addActionListener(new java.awt.event.ActionListener() {
@@ -1342,7 +1342,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
 
         jPanel6.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
-        jButtonNewExpressIncome.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jButtonNewExpressIncome.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButtonNewExpressIncome.setText(i18n.getString("New_Income")); // NOI18N
         jButtonNewExpressIncome.setMaximumSize(new java.awt.Dimension(130, 23));
         jButtonNewExpressIncome.setMinimumSize(new java.awt.Dimension(130, 23));
@@ -1354,7 +1354,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         });
         jPanel6.add(jButtonNewExpressIncome);
 
-        jButtonNewExpressExpense.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jButtonNewExpressExpense.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButtonNewExpressExpense.setText(i18n.getString("New_Expense")); // NOI18N
         jButtonNewExpressExpense.setMaximumSize(new java.awt.Dimension(130, 23));
         jButtonNewExpressExpense.setMinimumSize(new java.awt.Dimension(130, 23));
@@ -1371,7 +1371,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(mybudget.option.Options.I18N_BUNDLE.getString("Income"))); // NOI18N
         jPanel7.setLayout(new java.awt.GridBagLayout());
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel7.setText(mybudget.option.Options.I18N_BUNDLE.getString("Income_for_current_month_:_")); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridwidth = 3;
@@ -1380,7 +1380,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanel7.add(jLabel7, gridBagConstraints);
 
         jTextFieldCurrentMonthIncome.setBackground(javax.swing.UIManager.getDefaults().getColor("Panel.background"));
-        jTextFieldCurrentMonthIncome.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jTextFieldCurrentMonthIncome.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextFieldCurrentMonthIncome.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextFieldCurrentMonthIncome.setText("0");
         jTextFieldCurrentMonthIncome.setBorder(null);
@@ -1392,7 +1392,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
         jPanel7.add(jTextFieldCurrentMonthIncome, gridBagConstraints);
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel8.setText(mybudget.option.Options.I18N_BUNDLE.getString("Income_for_last_month_:_")); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -1403,7 +1403,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanel7.add(jLabel8, gridBagConstraints);
 
         jTextFieldLastMonthIncome.setBackground(javax.swing.UIManager.getDefaults().getColor("Panel.background"));
-        jTextFieldLastMonthIncome.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jTextFieldLastMonthIncome.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextFieldLastMonthIncome.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextFieldLastMonthIncome.setText("0");
         jTextFieldLastMonthIncome.setBorder(null);
@@ -1415,7 +1415,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
         jPanel7.add(jTextFieldLastMonthIncome, gridBagConstraints);
 
-        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel11.setText(mybudget.option.Options.I18N_BUNDLE.getString("Average_income_for")); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -1425,7 +1425,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanel7.add(jLabel11, gridBagConstraints);
 
         jTextFieldMonthAverageIncome.setBackground(javax.swing.UIManager.getDefaults().getColor("Panel.background"));
-        jTextFieldMonthAverageIncome.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jTextFieldMonthAverageIncome.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextFieldMonthAverageIncome.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextFieldMonthAverageIncome.setText("0");
         jTextFieldMonthAverageIncome.setBorder(null);
@@ -1438,7 +1438,6 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanel7.add(jTextFieldMonthAverageIncome, gridBagConstraints);
 
         jComboBoxMonthAverageIncome.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2", "3", "4", "5", "6", "12" }));
-        jComboBoxMonthAverageIncome.setPreferredSize(new java.awt.Dimension(40, 22));
         jComboBoxMonthAverageIncome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBoxMonthAverageIncomeActionPerformed(evt);
@@ -1450,7 +1449,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         gridBagConstraints.insets = new java.awt.Insets(3, 0, 3, 0);
         jPanel7.add(jComboBoxMonthAverageIncome, gridBagConstraints);
 
-        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel12.setText(mybudget.option.Options.I18N_BUNDLE.getString("months_:")); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
@@ -1463,7 +1462,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanel8.setBorder(javax.swing.BorderFactory.createTitledBorder(mybudget.option.Options.I18N_BUNDLE.getString("Expense"))); // NOI18N
         jPanel8.setLayout(new java.awt.GridBagLayout());
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel9.setText(mybudget.option.Options.I18N_BUNDLE.getString("Expense_for_current_month_:_")); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridwidth = 3;
@@ -1472,7 +1471,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanel8.add(jLabel9, gridBagConstraints);
 
         jTextFieldCurrentMonthExpense.setBackground(javax.swing.UIManager.getDefaults().getColor("Panel.background"));
-        jTextFieldCurrentMonthExpense.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jTextFieldCurrentMonthExpense.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextFieldCurrentMonthExpense.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextFieldCurrentMonthExpense.setText("0");
         jTextFieldCurrentMonthExpense.setBorder(null);
@@ -1485,7 +1484,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanel8.add(jTextFieldCurrentMonthExpense, gridBagConstraints);
 
         jTextFieldLastMonthExpense.setBackground(javax.swing.UIManager.getDefaults().getColor("Panel.background"));
-        jTextFieldLastMonthExpense.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jTextFieldLastMonthExpense.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextFieldLastMonthExpense.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextFieldLastMonthExpense.setText("0");
         jTextFieldLastMonthExpense.setBorder(null);
@@ -1497,7 +1496,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
         jPanel8.add(jTextFieldLastMonthExpense, gridBagConstraints);
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel10.setText(mybudget.option.Options.I18N_BUNDLE.getString("Expense_for_last_month_:_")); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -1507,7 +1506,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
         jPanel8.add(jLabel10, gridBagConstraints);
 
-        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel13.setText(mybudget.option.Options.I18N_BUNDLE.getString("Average_expense_for")); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -1517,7 +1516,6 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanel8.add(jLabel13, gridBagConstraints);
 
         jComboBoxMonthAverageExpense.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2", "3", "4", "5", "6", "12" }));
-        jComboBoxMonthAverageExpense.setPreferredSize(new java.awt.Dimension(40, 22));
         jComboBoxMonthAverageExpense.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBoxMonthAverageExpenseActionPerformed(evt);
@@ -1529,7 +1527,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         gridBagConstraints.insets = new java.awt.Insets(3, 0, 3, 0);
         jPanel8.add(jComboBoxMonthAverageExpense, gridBagConstraints);
 
-        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel14.setText(mybudget.option.Options.I18N_BUNDLE.getString("months_:")); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
@@ -1538,7 +1536,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanel8.add(jLabel14, gridBagConstraints);
 
         jTextFieldMonthAverageExpense.setBackground(javax.swing.UIManager.getDefaults().getColor("Panel.background"));
-        jTextFieldMonthAverageExpense.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jTextFieldMonthAverageExpense.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextFieldMonthAverageExpense.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextFieldMonthAverageExpense.setText("0");
         jTextFieldMonthAverageExpense.setBorder(null);
@@ -1555,7 +1553,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanel18.setBorder(javax.swing.BorderFactory.createTitledBorder(mybudget.option.Options.I18N_BUNDLE.getString("Balance"))); // NOI18N
         jPanel18.setLayout(new java.awt.GridBagLayout());
 
-        jLabel20.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabel20.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel20.setText(mybudget.option.Options.I18N_BUNDLE.getString("Balance_for_current_month_:_")); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridwidth = 3;
@@ -1564,7 +1562,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanel18.add(jLabel20, gridBagConstraints);
 
         jTextFieldCurrentMonthBalance.setBackground(javax.swing.UIManager.getDefaults().getColor("Panel.background"));
-        jTextFieldCurrentMonthBalance.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jTextFieldCurrentMonthBalance.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextFieldCurrentMonthBalance.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextFieldCurrentMonthBalance.setText("0");
         jTextFieldCurrentMonthBalance.setBorder(null);
@@ -1576,7 +1574,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
         jPanel18.add(jTextFieldCurrentMonthBalance, gridBagConstraints);
 
-        jLabel21.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabel21.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel21.setText(mybudget.option.Options.I18N_BUNDLE.getString("Balance_for_last_month_:_")); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -1587,7 +1585,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanel18.add(jLabel21, gridBagConstraints);
 
         jTextFieldLastMonthBalance.setBackground(javax.swing.UIManager.getDefaults().getColor("Panel.background"));
-        jTextFieldLastMonthBalance.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jTextFieldLastMonthBalance.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextFieldLastMonthBalance.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextFieldLastMonthBalance.setText("0");
         jTextFieldLastMonthBalance.setBorder(null);
@@ -1599,7 +1597,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
         jPanel18.add(jTextFieldLastMonthBalance, gridBagConstraints);
 
-        jLabel22.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabel22.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel22.setText(mybudget.option.Options.I18N_BUNDLE.getString("Average_balance_for")); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -1609,7 +1607,6 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanel18.add(jLabel22, gridBagConstraints);
 
         jComboBoxMonthAverageBalance.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2", "3", "4", "5", "6", "12" }));
-        jComboBoxMonthAverageBalance.setPreferredSize(new java.awt.Dimension(40, 22));
         jComboBoxMonthAverageBalance.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBoxMonthAverageBalanceActionPerformed(evt);
@@ -1621,7 +1618,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         gridBagConstraints.insets = new java.awt.Insets(3, 0, 3, 0);
         jPanel18.add(jComboBoxMonthAverageBalance, gridBagConstraints);
 
-        jLabel23.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabel23.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel23.setText(mybudget.option.Options.I18N_BUNDLE.getString("months_:")); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
@@ -1630,7 +1627,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanel18.add(jLabel23, gridBagConstraints);
 
         jTextFieldMonthAverageBalance.setBackground(javax.swing.UIManager.getDefaults().getColor("Panel.background"));
-        jTextFieldMonthAverageBalance.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jTextFieldMonthAverageBalance.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextFieldMonthAverageBalance.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextFieldMonthAverageBalance.setText("0");
         jTextFieldMonthAverageBalance.setBorder(null);
@@ -1678,7 +1675,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
 
         jPanel2.add(jPanel1, new java.awt.GridBagConstraints());
 
-        jLabelSliderTime.setFont(new java.awt.Font("Tahoma", 1, 10));
+        jLabelSliderTime.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         jLabelSliderTime.setForeground(new java.awt.Color(102, 102, 102));
         jLabelSliderTime.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabelSliderTime.setText("0");
@@ -1690,7 +1687,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
         jPanel2.add(jLabelSliderTime, gridBagConstraints);
 
-        jLabelSliderTime1.setFont(new java.awt.Font("Tahoma", 0, 10));
+        jLabelSliderTime1.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelSliderTime1.setForeground(new java.awt.Color(102, 102, 102));
         jLabelSliderTime1.setText(mybudget.option.Options.I18N_BUNDLE.getString("Balance_Slider_Months"));
         jLabelSliderTime1.setPreferredSize(new java.awt.Dimension(70, 13));
@@ -1712,12 +1709,12 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel3.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 2, 2));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel1.setText(mybudget.option.Options.I18N_BUNDLE.getString("Balance_:")); // NOI18N
         jPanel3.add(jLabel1);
 
         jTextFieldBalance.setBackground(javax.swing.UIManager.getDefaults().getColor("Panel.background"));
-        jTextFieldBalance.setFont(new java.awt.Font("Tahoma", 1, 11));
+        jTextFieldBalance.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jTextFieldBalance.setForeground(new java.awt.Color(0, 80, 200));
         jTextFieldBalance.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         jTextFieldBalance.setText("0");
@@ -1731,12 +1728,12 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 2, 2));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel2.setText(i18n.getString("Total_Income:_")); // NOI18N
         jPanel4.add(jLabel2);
 
         jTextFieldIncomeTotal.setBackground(javax.swing.UIManager.getDefaults().getColor("Panel.background"));
-        jTextFieldIncomeTotal.setFont(new java.awt.Font("Tahoma", 1, 11));
+        jTextFieldIncomeTotal.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jTextFieldIncomeTotal.setForeground(new java.awt.Color(0, 200, 130));
         jTextFieldIncomeTotal.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         jTextFieldIncomeTotal.setText("0");
@@ -1750,12 +1747,12 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel5.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 2, 2));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel3.setText(i18n.getString("Total_Expense:_")); // NOI18N
         jPanel5.add(jLabel3);
 
         jTextFieldExpenseTotal.setBackground(javax.swing.UIManager.getDefaults().getColor("Panel.background"));
-        jTextFieldExpenseTotal.setFont(new java.awt.Font("Tahoma", 1, 11));
+        jTextFieldExpenseTotal.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jTextFieldExpenseTotal.setForeground(new java.awt.Color(255, 150, 0));
         jTextFieldExpenseTotal.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         jTextFieldExpenseTotal.setText("0");
@@ -1775,7 +1772,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
 
         jPanelIncomeTop.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
-        jButtonIncomeNew.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jButtonIncomeNew.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButtonIncomeNew.setText(i18n.getString("New")); // NOI18N
         jButtonIncomeNew.setMargin(new java.awt.Insets(2, 4, 2, 4));
         jButtonIncomeNew.setPreferredSize(new java.awt.Dimension(80, 23));
@@ -1786,7 +1783,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         });
         jPanelIncomeTop.add(jButtonIncomeNew);
 
-        jButtonIncomeEdit.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jButtonIncomeEdit.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButtonIncomeEdit.setText(i18n.getString("Edit")); // NOI18N
         jButtonIncomeEdit.setMargin(new java.awt.Insets(2, 4, 2, 4));
         jButtonIncomeEdit.setPreferredSize(new java.awt.Dimension(80, 23));
@@ -1801,7 +1798,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jSeparator2.setPreferredSize(new java.awt.Dimension(2, 23));
         jPanelIncomeTop.add(jSeparator2);
 
-        jButtonIncomeDelete.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jButtonIncomeDelete.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButtonIncomeDelete.setText(i18n.getString("Delete")); // NOI18N
         jButtonIncomeDelete.setMargin(new java.awt.Insets(2, 4, 2, 4));
         jButtonIncomeDelete.setPreferredSize(new java.awt.Dimension(80, 23));
@@ -1818,7 +1815,8 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
 
         jComboBoxIncomeAdditionMovement.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jComboBoxIncomeAdditionMovement.setMaximumRowCount(50);
-        jComboBoxIncomeAdditionMovement.setPreferredSize(new java.awt.Dimension(200, 22));
+        jComboBoxIncomeAdditionMovement.setMinimumSize(new java.awt.Dimension(220, 22));
+        jComboBoxIncomeAdditionMovement.setPreferredSize(new java.awt.Dimension(220, 22));
         jComboBoxIncomeAdditionMovement.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBoxIncomeAdditionMovementActionPerformed(evt);
@@ -1835,10 +1833,11 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jSeparator6.setPreferredSize(new java.awt.Dimension(2, 23));
         jPanelIncomeTop.add(jSeparator6);
 
-        jComboBoxIncomePeriod.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jComboBoxIncomePeriod.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jComboBoxIncomePeriod.setMaximumRowCount(50);
         jComboBoxIncomePeriod.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Select Period...", "  Today", "   Last 7 Days", "   Last 15 Days", "   Last 30 Days", "   Last 60 Days", "   Last 90 Days", "   Last 150 Days", "   Last 300 Days", "   All Time" }));
-        jComboBoxIncomePeriod.setPreferredSize(new java.awt.Dimension(150, 22));
+        jComboBoxIncomePeriod.setMinimumSize(new java.awt.Dimension(160, 22));
+        jComboBoxIncomePeriod.setPreferredSize(new java.awt.Dimension(160, 22));
         jComboBoxIncomePeriod.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBoxIncomePeriodActionPerformed(evt);
@@ -1860,22 +1859,22 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanelIncomeBottom.setPreferredSize(new java.awt.Dimension(51, 24));
         jPanelIncomeBottom.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
-        jLabelIncomeSumLabel.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabelIncomeSumLabel.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabelIncomeSumLabel.setText(i18n.getString("Sum_:_")); // NOI18N
         jPanelIncomeBottom.add(jLabelIncomeSumLabel);
 
-        jLabelIncomeSum.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabelIncomeSum.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabelIncomeSum.setText("0");
         jPanelIncomeBottom.add(jLabelIncomeSum);
 
         jLabel18.setText("        "); // NOI18N
         jPanelIncomeBottom.add(jLabel18);
 
-        jLabelIncomeSelectedSumLabel.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabelIncomeSelectedSumLabel.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabelIncomeSelectedSumLabel.setText(i18n.getString("________Selected_Sum_:_")); // NOI18N
         jPanelIncomeBottom.add(jLabelIncomeSelectedSumLabel);
 
-        jLabelIncomeSelectedSum.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabelIncomeSelectedSum.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabelIncomeSelectedSum.setText("0");
         jPanelIncomeBottom.add(jLabelIncomeSelectedSum);
 
@@ -1888,7 +1887,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
 
         jPanelExpenseTop.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
-        jButtonExpenseNew.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jButtonExpenseNew.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButtonExpenseNew.setText(i18n.getString("New")); // NOI18N
         jButtonExpenseNew.setMargin(new java.awt.Insets(2, 4, 2, 4));
         jButtonExpenseNew.setPreferredSize(new java.awt.Dimension(80, 23));
@@ -1899,7 +1898,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         });
         jPanelExpenseTop.add(jButtonExpenseNew);
 
-        jButtonExpenseEdit.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jButtonExpenseEdit.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButtonExpenseEdit.setText(i18n.getString("Edit")); // NOI18N
         jButtonExpenseEdit.setMargin(new java.awt.Insets(2, 4, 2, 4));
         jButtonExpenseEdit.setPreferredSize(new java.awt.Dimension(80, 23));
@@ -1914,7 +1913,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jSeparator4.setPreferredSize(new java.awt.Dimension(2, 23));
         jPanelExpenseTop.add(jSeparator4);
 
-        jButtonExpenseDelete.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jButtonExpenseDelete.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButtonExpenseDelete.setText(i18n.getString("Delete")); // NOI18N
         jButtonExpenseDelete.setMargin(new java.awt.Insets(2, 4, 2, 4));
         jButtonExpenseDelete.setPreferredSize(new java.awt.Dimension(80, 23));
@@ -1929,9 +1928,10 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jSeparator5.setPreferredSize(new java.awt.Dimension(2, 23));
         jPanelExpenseTop.add(jSeparator5);
 
-        jComboBoxExpenseAdditionMovement.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jComboBoxExpenseAdditionMovement.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jComboBoxExpenseAdditionMovement.setMaximumRowCount(50);
-        jComboBoxExpenseAdditionMovement.setPreferredSize(new java.awt.Dimension(200, 22));
+        jComboBoxExpenseAdditionMovement.setMinimumSize(new java.awt.Dimension(220, 22));
+        jComboBoxExpenseAdditionMovement.setPreferredSize(new java.awt.Dimension(220, 22));
         jComboBoxExpenseAdditionMovement.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBoxExpenseAdditionMovementActionPerformed(evt);
@@ -1948,10 +1948,11 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jSeparator7.setPreferredSize(new java.awt.Dimension(2, 23));
         jPanelExpenseTop.add(jSeparator7);
 
-        jComboBoxExpensePeriod.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jComboBoxExpensePeriod.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jComboBoxExpensePeriod.setMaximumRowCount(50);
         jComboBoxExpensePeriod.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Select Period...", "   Today", "   Last 15 Days", "   Last 30 Days", "   Last 60 Days", "   Last 90 Days", "   Last 150 Days", "   Last 300 Days", "   All Time" }));
-        jComboBoxExpensePeriod.setPreferredSize(new java.awt.Dimension(150, 22));
+        jComboBoxExpensePeriod.setMinimumSize(new java.awt.Dimension(160, 22));
+        jComboBoxExpensePeriod.setPreferredSize(new java.awt.Dimension(160, 22));
         jComboBoxExpensePeriod.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBoxExpensePeriodActionPerformed(evt);
@@ -1972,22 +1973,22 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanelExpenseBottom.setPreferredSize(new java.awt.Dimension(195, 24));
         jPanelExpenseBottom.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
-        jLabelExpenseSumLabel.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabelExpenseSumLabel.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabelExpenseSumLabel.setText(i18n.getString("Sum_:_")); // NOI18N
         jPanelExpenseBottom.add(jLabelExpenseSumLabel);
 
-        jLabelExpenseSum.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabelExpenseSum.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabelExpenseSum.setText("0");
         jPanelExpenseBottom.add(jLabelExpenseSum);
 
         jLabel17.setText("        "); // NOI18N
         jPanelExpenseBottom.add(jLabel17);
 
-        jLabelExpenseSelectedSumLabel.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabelExpenseSelectedSumLabel.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabelExpenseSelectedSumLabel.setText(i18n.getString("________Selected_Sum_:_")); // NOI18N
         jPanelExpenseBottom.add(jLabelExpenseSelectedSumLabel);
 
-        jLabelExpenseSelectedSum.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabelExpenseSelectedSum.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabelExpenseSelectedSum.setText("0");
         jPanelExpenseBottom.add(jLabelExpenseSelectedSum);
 
@@ -2029,15 +2030,16 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
 
         jPanelStatisticGraphParam.setLayout(new java.awt.GridBagLayout());
 
-        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel15.setText(i18n.getString("Diagram_Type_:")); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
         jPanelStatisticGraphParam.add(jLabel15, gridBagConstraints);
 
-        jComboBoxStatisticDiagramType.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jComboBoxStatisticDiagramType.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jComboBoxStatisticDiagramType.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Type 1", "Type 2" }));
-        jComboBoxStatisticDiagramType.setPreferredSize(new java.awt.Dimension(70, 23));
+        jComboBoxStatisticDiagramType.setMinimumSize(new java.awt.Dimension(90, 23));
+        jComboBoxStatisticDiagramType.setPreferredSize(new java.awt.Dimension(90, 23));
         jComboBoxStatisticDiagramType.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBoxStatisticDiagramTypeActionPerformed(evt);
@@ -2047,15 +2049,16 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 15);
         jPanelStatisticGraphParam.add(jComboBoxStatisticDiagramType, gridBagConstraints);
 
-        jLabel16.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabel16.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel16.setText(i18n.getString("Time_Tick_:")); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.insets = new java.awt.Insets(3, 15, 3, 3);
         jPanelStatisticGraphParam.add(jLabel16, gridBagConstraints);
 
-        jComboBoxStatisticTimeTick.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jComboBoxStatisticTimeTick.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jComboBoxStatisticTimeTick.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Day", "Week", "Month", "Year" }));
-        jComboBoxStatisticTimeTick.setPreferredSize(new java.awt.Dimension(80, 22));
+        jComboBoxStatisticTimeTick.setMinimumSize(new java.awt.Dimension(90, 22));
+        jComboBoxStatisticTimeTick.setPreferredSize(new java.awt.Dimension(90, 22));
         jComboBoxStatisticTimeTick.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBoxStatisticTimeTickActionPerformed(evt);
@@ -2233,14 +2236,14 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanelDateInterval.setBorder(javax.swing.BorderFactory.createTitledBorder(mybudget.option.Options.I18N_BUNDLE.getString("Date_Interval"))); // NOI18N
         jPanelDateInterval.setLayout(new java.awt.GridBagLayout());
 
-        jLabel24.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabel24.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel24.setText(mybudget.option.Options.I18N_BUNDLE.getString("From")); // NOI18N
         jPanelDateInterval.add(jLabel24, new java.awt.GridBagConstraints());
 
         jCCFieldFrom.setExtButtonVisible(false);
         jPanelDateInterval.add(jCCFieldFrom, new java.awt.GridBagConstraints());
 
-        jLabel25.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jLabel25.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel25.setText(mybudget.option.Options.I18N_BUNDLE.getString("To")); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.insets = new java.awt.Insets(0, 10, 0, 0);
@@ -2249,7 +2252,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jCCFieldTo.setExtButtonVisible(false);
         jPanelDateInterval.add(jCCFieldTo, new java.awt.GridBagConstraints());
 
-        jComboBoxSumPeriod.setFont(new java.awt.Font("Tahoma", 0, 12));
+        jComboBoxSumPeriod.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jComboBoxSumPeriod.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBoxSumPeriod.setPreferredSize(new java.awt.Dimension(160, 22));
         jComboBoxSumPeriod.addActionListener(new java.awt.event.ActionListener() {
@@ -2316,10 +2319,10 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         getContentPane().add(jPanelMainCenter, java.awt.BorderLayout.CENTER);
 
         jMenuFile.setText(i18n.getString("File")); // NOI18N
-        jMenuFile.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jMenuFile.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
         jMenuItemExit.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItemExit.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jMenuItemExit.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jMenuItemExit.setText(i18n.getString("Exit")); // NOI18N
         jMenuItemExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2331,10 +2334,10 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jMenuBar.add(jMenuFile);
 
         jMenuData.setText(i18n.getString("Data")); // NOI18N
-        jMenuData.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jMenuData.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
         jMenuItemNewIncome.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItemNewIncome.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jMenuItemNewIncome.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jMenuItemNewIncome.setText(i18n.getString("New_Income...")); // NOI18N
         jMenuItemNewIncome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2344,7 +2347,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jMenuData.add(jMenuItemNewIncome);
 
         jMenuItemNewExpense.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItemNewExpense.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jMenuItemNewExpense.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jMenuItemNewExpense.setText(i18n.getString("New_Expense...")); // NOI18N
         jMenuItemNewExpense.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2355,7 +2358,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jMenuData.add(jSeparator10);
 
         jMenuItemTagsList.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItemTagsList.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jMenuItemTagsList.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jMenuItemTagsList.setText(i18n.getString("Tags_List...")); // NOI18N
         jMenuItemTagsList.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2367,10 +2370,10 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jMenuBar.add(jMenuData);
 
         jMenuNavigate.setText(i18n.getString("Navigate")); // NOI18N
-        jMenuNavigate.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jMenuNavigate.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
         jMenuItemGeneral.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_1, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItemGeneral.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jMenuItemGeneral.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jMenuItemGeneral.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mybudget/gui/images/iconGeneral16.png"))); // NOI18N
         jMenuItemGeneral.setText(i18n.getString("Select_in_General")); // NOI18N
         jMenuItemGeneral.addActionListener(new java.awt.event.ActionListener() {
@@ -2381,7 +2384,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jMenuNavigate.add(jMenuItemGeneral);
 
         jMenuItemIncome.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_2, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItemIncome.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jMenuItemIncome.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jMenuItemIncome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mybudget/gui/images/iconIncome16.png"))); // NOI18N
         jMenuItemIncome.setText(i18n.getString("Select_in_Income")); // NOI18N
         jMenuItemIncome.addActionListener(new java.awt.event.ActionListener() {
@@ -2392,7 +2395,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jMenuNavigate.add(jMenuItemIncome);
 
         jMenuItemExpense.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_3, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItemExpense.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jMenuItemExpense.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jMenuItemExpense.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mybudget/gui/images/iconExpense16.png"))); // NOI18N
         jMenuItemExpense.setText(i18n.getString("Select_in_Expense")); // NOI18N
         jMenuItemExpense.addActionListener(new java.awt.event.ActionListener() {
@@ -2403,7 +2406,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jMenuNavigate.add(jMenuItemExpense);
 
         jMenuItemStatistic.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_4, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItemStatistic.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jMenuItemStatistic.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jMenuItemStatistic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mybudget/gui/images/iconStatistic16.png"))); // NOI18N
         jMenuItemStatistic.setText(i18n.getString("Select_in_Statistic")); // NOI18N
         jMenuItemStatistic.addActionListener(new java.awt.event.ActionListener() {
@@ -2416,10 +2419,10 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jMenuBar.add(jMenuNavigate);
 
         jMenuTools.setText(i18n.getString("Tools")); // NOI18N
-        jMenuTools.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jMenuTools.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
         jMenuItemOptions.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItemOptions.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jMenuItemOptions.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jMenuItemOptions.setText(i18n.getString("Options...")); // NOI18N
         jMenuItemOptions.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2428,21 +2431,21 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         });
         jMenuTools.add(jMenuItemOptions);
 
-        jMenuItemExport.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jMenuItemExport.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jMenuItemExport.setText(i18n.getString("Export...")); // NOI18N
         jMenuTools.add(jMenuItemExport);
 
         jMenuBar.add(jMenuTools);
 
         jMenuHelp.setText(i18n.getString("Help")); // NOI18N
-        jMenuHelp.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jMenuHelp.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
         jMenuItemHelpContents.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_H, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItemHelpContents.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jMenuItemHelpContents.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jMenuItemHelpContents.setText(i18n.getString("Help_Contents")); // NOI18N
         jMenuHelp.add(jMenuItemHelpContents);
 
-        jMenuItemAbout.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jMenuItemAbout.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jMenuItemAbout.setText(i18n.getString("About")); // NOI18N
         jMenuItemAbout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
