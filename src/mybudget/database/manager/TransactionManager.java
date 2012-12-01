@@ -109,6 +109,25 @@ public class TransactionManager {
     }
 
     /**
+     * Возвращает все транзакции с тегами упорядоченные по дате и индексу.
+     * @return Список транзакций с тегами.
+     */
+    public List<Transaction> getListTransactionWithTags() {
+        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+        session.beginTransaction();
+
+        List<Transaction> list;
+        Query q = session.createQuery("from Transaction as transaction "+
+                "left outer join fetch transaction.tags "+
+                "order by transaction.date asc, transaction.id asc");
+        Set<Transaction> unic = new LinkedHashSet(q.list());
+        list = new ArrayList(unic);
+
+        session.getTransaction().commit();
+        return list;
+    }
+
+    /**
      * Возвращает последнии транзакции с лимитом.
      * @param limit Количество последних транзакций.
      * @return Список транзакций.

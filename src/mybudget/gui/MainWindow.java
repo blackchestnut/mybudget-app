@@ -15,6 +15,10 @@ import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.MouseAdapter;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.net.InetAddress;
 import java.text.ParseException;
 import java.util.Calendar;
@@ -25,6 +29,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.prefs.Preferences;
 import javax.swing.JButton;
+import javax.swing.JFileChooser;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import mybudget.Main;
@@ -51,7 +56,6 @@ import mybudget.table.SumTable;
 import mybudget.table.TagTable;
 import mybudget.table.TransactionTable;
 import org.apache.derby.drda.NetworkServerControl;
-
 /**
  *
  * @author Alexander Kalinichev / alexander.kalinichev@gmail.com
@@ -213,7 +217,6 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
             System.exit(1);
         }
         
-        jMenuItemExport.setVisible(false);
         jMenuItemHelpContents.setVisible(false);
         jButtonToolBarGeneral.setText("");
         jButtonToolBarIncome.setText("");
@@ -1043,6 +1046,7 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         buttonGroupStatistic = new javax.swing.ButtonGroup();
         buttonGroupSummary = new javax.swing.ButtonGroup();
         buttonGroupIncome = new javax.swing.ButtonGroup();
+        jExportFileChooser = new javax.swing.JFileChooser();
         jToolBar = new javax.swing.JToolBar();
         jButtonToolBarGeneral = new javax.swing.JButton();
         jButtonToolBarIncome = new javax.swing.JButton();
@@ -1256,6 +1260,8 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
         jPanelTagsListCenter.add(jScrollPaneTagsList, java.awt.BorderLayout.CENTER);
 
         jDialogTagsList.getContentPane().add(jPanelTagsListCenter, java.awt.BorderLayout.CENTER);
+
+        jExportFileChooser.setDialogTitle("Export");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("myBudget v.0.6");
@@ -2433,6 +2439,11 @@ public class MainWindow extends javax.swing.JFrame implements PrefValue {
 
         jMenuItemExport.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jMenuItemExport.setText(i18n.getString("Export...")); // NOI18N
+        jMenuItemExport.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemExportActionPerformed(evt);
+            }
+        });
         jMenuTools.add(jMenuItemExport);
 
         jMenuBar.add(jMenuTools);
@@ -3045,9 +3056,51 @@ private void jComboBoxSumPeriodActionPerformed(java.awt.event.ActionEvent evt) {
     if (0 < jComboBoxSumPeriod.getItemCount()) {
         jComboBoxSumPeriod.setSelectedIndex(0);
     }
-    
-    
+
 }//GEN-LAST:event_jComboBoxSumPeriodActionPerformed
+
+    private void jMenuItemExportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemExportActionPerformed
+
+        jExportFileChooser.setSelectedFile(new File("export.csv"));
+        int res = jExportFileChooser.showSaveDialog(this);
+        if (res == JFileChooser.APPROVE_OPTION) {
+            File file = jExportFileChooser.getSelectedFile();
+            if (file != null) {
+                BufferedWriter writer = null;
+                try {
+                    writer = new BufferedWriter(new FileWriter(file));
+                    List<Transaction> list = transactionManager.getListTransactionWithTags();
+                    for (Transaction t : list) {
+                        double value = t.getType() == Transaction.TYPE_INCOME
+                                ? t.getValue()
+                                : -t.getValue();
+                        String desc = t.getDescription().replaceAll(";", "");
+                        String tags = "";
+                        for (Object g : t.getTags()) {
+                            tags += String.format("%s;", ((Tag) g).getName());
+                        }
+                        writer.write(String.format(
+                            "%tF;%s;%f;%s\n",
+                            t.getDate(), desc, value, tags));
+                    }
+                } catch (Exception e) {
+                    // TODO : error message.
+                    Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, e);
+                } finally {
+                    if (writer != null) {
+                        try {
+                            writer.close();
+                        } catch (IOException ex) {
+                            // TODO : error message.
+                            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }//GEN-LAST:event_jMenuItemExportActionPerformed
 
     /**
      * @param args the command line arguments
@@ -3093,6 +3146,7 @@ private void jComboBoxSumPeriodActionPerformed(java.awt.event.ActionEvent evt) {
     private javax.swing.JComboBox jComboBoxStatisticTimeTick;
     private javax.swing.JComboBox jComboBoxSumPeriod;
     private javax.swing.JDialog jDialogTagsList;
+    private javax.swing.JFileChooser jExportFileChooser;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

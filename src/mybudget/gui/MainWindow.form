@@ -113,6 +113,11 @@
     </Component>
     <Component class="javax.swing.ButtonGroup" name="buttonGroupIncome">
     </Component>
+    <Component class="javax.swing.JFileChooser" name="jExportFileChooser">
+      <Properties>
+        <Property name="dialogTitle" type="java.lang.String" value="Export"/>
+      </Properties>
+    </Component>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar">
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="jMenuFile">
@@ -328,6 +333,9 @@
                   <ResourceString bundle="mybudget/option/i18n.properties" key="Export..." replaceFormat="i18n.getString(&quot;{key}&quot;)"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemExportActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
